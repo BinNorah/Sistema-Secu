@@ -1,5 +1,7 @@
 # Arquitectura del sistema
 
+Para una explicación paso a paso de las conexiones, el inicio de sesión, la persistencia, los límites funcionales y los comandos de ejecución, consulta [Arquitectura y funcionamiento del Sistema Escolar](./arquitectura-sistema.md) y su [versión PDF](./arquitectura-sistema.pdf).
+
 ## Alcance
 
 La aplicacion conserva los flujos existentes de solicitudes de ingreso y calificaciones bimestrales. El modelo academico del documento de arquitectura se agrega de forma aditiva: una solicitud aprobada puede convertirse en una matricula academica, y las notas academicas se relacionan con matriculas y asignaciones sin alterar el historial de calificaciones existente.
