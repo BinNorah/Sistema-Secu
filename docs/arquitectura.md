@@ -1,6 +1,6 @@
 # Arquitectura del sistema
 
-Para una explicación paso a paso de las conexiones, el inicio de sesión, la persistencia, los límites funcionales y los comandos de ejecución, consulta [Arquitectura y funcionamiento del Sistema Escolar](./arquitectura-sistema.md) y su [versión PDF](./arquitectura-sistema.pdf).
+Para una explicación paso a paso de las conexiones, el inicio de sesión, la persistencia, los límites funcionales y los comandos de ejecución, consulta [Arquitectura y funcionamiento del Sistema Escolar](./arquitectura-sistema.md) y su [versión PDF](./arquitectura-sistema.pdf). Para el recorrido de cada módulo, el alcance real de su CRUD, los patrones State/Memento y las operaciones pendientes, consulta la guía [Funcionamiento y flujo CRUD por módulo](./flujo-crud-modulos.md) y su [versión PDF](./flujo-crud-modulos.pdf).
 
 ## Alcance
 
