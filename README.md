@@ -127,7 +127,9 @@ Abra una terminal en VS Code y ejecute:
 cd backend
 go run ./cmd/api
 ```
-El backend iniciará en `http://localhost:8080`, creará la base de datos `app.db` con sus migraciones y datos semilla automáticamente.
+El backend iniciará en `http://localhost:8080`. Si `app.db` no existe, la crea automáticamente, aplica las migraciones y carga datos de demostración con las [cuentas de prueba](#4-credenciales-de-prueba-y-perfiles). No es necesario subir una base de datos SQLite: cada clon crea una nueva al iniciar por primera vez.
+
+La base de datos local contiene información de demostración y los datos que se ingresen al usar el sistema. No publiques `app.db` ni sus archivos auxiliares (`app.db-shm` y `app.db-wal`).
 
 ### Paso 2: Levantar el Frontend (React + Vite)
 Abra una segunda terminal en VS Code y ejecute:

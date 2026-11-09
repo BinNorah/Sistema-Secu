@@ -16,6 +16,23 @@ func TestNewConnectionAppliesAcademicMigrations(t *testing.T) {
 	}
 	defer db.Close()
 
+	for _, credentials := range []struct {
+		username string
+		password string
+	}{
+		{username: "secretaria", password: "Secre123*"},
+		{username: "director", password: "Direc123*"},
+		{username: "profesor", password: "Profe123*"},
+	} {
+		authService := service.NewAuthService(NewUserRepository(db))
+		if _, err := authService.Login(service.LoginDTO{
+			Username: credentials.username,
+			Password: credentials.password,
+		}); err != nil {
+			t.Errorf("expected seeded account %q to log in: %v", credentials.username, err)
+		}
+	}
+
 	var migrationCount int
 	if err := db.QueryRow("SELECT COUNT(*) FROM schema_migrations").Scan(&migrationCount); err != nil {
 		t.Fatal(err)
