@@ -1,0 +1,12 @@
+:root {
+  --color-brand: #1d4ed8;
+  --color-brand-dark: #1e3a8a;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-surface: #f8fafc;
+  --color-pending: #eab308;
+  --color-active: #16a34a;
+  --color-terminal: #64748b;
+  --color-finalized: #2563eb;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
